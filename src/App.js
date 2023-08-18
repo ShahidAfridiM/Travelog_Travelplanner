@@ -599,9 +599,10 @@ const options = {
 };
 
 const topLocations = [
-  { name: "Milano, Italy", value: "Milano/Italy" },
-  { name: "Paris, France", value: "Paris/France" },
-  { name: "Los Angeles, CA", value: "Los Angeles/California" },
+  { name: "Madurai, India", value: "Madurai/India" },
+  { name: "Bangalore, India", value: "Bangalore/India" },
+  { name: "Kodaikanal, India", value: "Kodaikanal/India" },
+  { name: "Ooty, India", value: "Ooty/India" },
   // add more top locations as needed
 ];
 
@@ -868,7 +869,7 @@ const AITravelPlanner = () => {
             <Label htmlFor="destinationCountry">Destination Country</Label>
             <Input
               type="text"
-              placeholder="e.g. San Francisco/USA, Paris/France, Istanbul/Turkey, etc."
+              placeholder="e.g. Chennai/India, San Francisco/USA, Istanbul/Turkey, etc."
               id="destinationCountry"
               name="destinationCountry"
               value={values.destinationCountry}
@@ -876,7 +877,7 @@ const AITravelPlanner = () => {
               required
             />
             <TopLocationContainer>
-              <Label htmlFor="topDestinations">🔥Top Destionations:</Label>
+              <Label htmlFor="topDestinations">🔥Top Destinations:</Label>
               {topLocations.map((location) => (
                 <PinButton
                   key={location.value}
