@@ -998,7 +998,7 @@ const AITravelPlanner = () => {
                   color: "#666",
                 }}
               >
-                (e.g. car, train, bus, etc.)
+                (e.g. flight, train, bus, etc.)
               </p>
             </Label>
             <Input
